@@ -1,6 +1,10 @@
+"use client";
+
+import { getAllArticles } from "@/api";
 import AddArticle from "./components/AddArticle";
 import Articles from "./components/Articles";
 import FilterArticle from "./components/FilterArticle";
+import { useCallback, useState } from "react";
 
 export default function Home() {
   return (
